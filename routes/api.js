@@ -25,7 +25,7 @@ router.post('/divide', (req, res, next) => {
   res.json({result: req.body.num1 / req.body.num2})
 })
 router.post('/concat', (req, res, next) => {
-  res.json({result: req.body.str1 + req.body.str2})
+  res.json({result: Number(req.body.num1 + req.body.num2)})
 })
 
 module.exports = router;
